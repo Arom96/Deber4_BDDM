@@ -35,12 +35,12 @@ match (a:amigo)-[:RELATED_TO]->(l:lugar) return l
 ----------------------------------------Consulta No 6----------------------------------------
 Explicación: Nos devuelve los platos que ha comido esta persona
 ---------------------------------------------------------------------------------------------
-match (c:comida)-[:RELATED_TO]->(a:amigo) where a.Apellido = "herrera" return c.plato
+match (c:comida)-[:RELATED_TO]->(a:amigo) where a.Apellido = "Ramirez" return c.plato
 
 ----------------------------------------Consulta No 7----------------------------------------
 Explicación: Nos devuelve el tipo de musica que escuha la persona
 ---------------------------------------------------------------------------------------------
-match (a:amigo)-[:RELATED_TO]->(m:Musica) where a.Apellido = "herrera" return m
+match (a:amigo)-[:RELATED_TO]->(m:Musica) where a.Apellido = "Ramirez" return m
 
 ----------------------------------------Consulta No 8----------------------------------------
 Explicación: devuelve la relacion que existe entre amigos y la musica que tienen en común
